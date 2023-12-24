@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Work+Sans&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ae9cff;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #6347df;
+    border-radius: 15px;
+    background-color: #fefeff2b;
+}
+
+#input {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#imp {
+    width: 87%;
+    border-radius: 10px;
+}
+
+.search {
+    height: 58px;
+    width: 12%;
+    border: 3px solid #1561bf;
+    border-radius: 15px;
+    background-color: #ae9cff;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    height: 400px;
+    width: auto;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.word {
+    display: flex;
+    text-align: center;
+    font-family: system-ui;
+}
+
+.error {
+    text-align: center;
+}
+
+/* Media Queries  */
+
+
+@media only screen and (max-width: 767px) and (min-width: 400px) {
+    .container {
+        margin-top: 40px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #6347df;
+        border-radius: 15px;
+        background-color: #fefeff2b;
+    }
+
+    .search {
+        height: 50px;
+        width: 20%;
+        border: 3px solid #1561bf;
+        border-radius: 15px;
+        background-color: #ae9cff;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width: 400px) and (min-width: 100px) {
+
+    .container {
+        margin-top: 40px;
+        height: 700px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #6347df;
+        border-radius: 15px;
+        background-color: #fefeff2b;
+    }
+
+    .search {
+        height: 50px;
+        width: 100%;
+        border: 3px solid #1561bf;
+        border-radius: 15px;
+        background-color: #ae9cff;
+        color: white;
+    }
+
+    #imp {
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #input {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        flex-direction: column;
+        align-items:flex-end ;
+        margin-top: 20px;
+        
+    }
+
+}
